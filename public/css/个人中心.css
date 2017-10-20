@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bb{
+    width: 750px;
+    overflow: hidden;
+}
+/*<!-- 顶部 750*370 有背景图 头像 认证等等 -->  */
+header{
+    display: block;
+    width: 100%;
+    float: left;
+    background-image: url(../images/0-images/index/index_22.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px -300px;
+}
+header .one{
+    width: 100%;
+    /* height: 230px; */
+    
+    /* display: flex;
+    flex-direction: column-reverse; */
+}
+header .top{
+    width: 200px;
+    height: 100px;
+    font-size: 40px;
+    color: #fff;
+    margin: 30px auto;
+}
+header .picture{
+    position: relative;
+    left: 50px;
+    border-radius: 50%;
+    float: left;
+}
+header #name{
+    position: relative;
+    left: 50px;
+    width: 150px;
+    height: 100px;
+    color: #fff;
+    float: left;
+    font-size: 25px;
+    margin: auto 0;
+    line-height: 150px;
+    text-align: center;
+}
+/* 第二部分 */
+header .two{
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+header .two a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+header .tr_1{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction:row;
+    line-height: 70px;
+}
+header .left{
+    margin-left: 50px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+}
+ header .left>span:first-child{
+    margin-top:10px;
+    width: 50px;
+    height: 50px;
+}
+header .left>span:nth-of-type(2){
+    width: 120px;
+    height: 70px;   
+} 
+header .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+}
+header .right>span:first-child{
+    margin-top:10px;
+    width: 50px;
+    height: 50px;;
+}
+
+header .right>span:nth-of-type(2){
+    width: 150px;
+    height: 70px;
+}
+header .tr_2{
+   width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction:row; 
+    line-height: 70px;
+}
+header .tr_2 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 28px;
+}
+header .tr_2>.left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction:row; 
+}
+header .tr_2>.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction:row; 
+}
+/*<!--选项卡 750*405 基本信息 收藏等等 -->  */
+.nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.nav .items{
+    width: 100%;
+    flex: 1;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    /* padding: 30px; */
+}
+.nav .items a{
+    text-decoration: none;
+    color: #888888;
+    font-size: 25px;
+}
+.nav .items>div:first-child{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+}
+.nav .items>div:last-child{
+    margin-top: 30px;    
+    width: 150px;
+    height: 50px;
+}

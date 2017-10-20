@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding: 0;
+}
+/*body设置为宽度750px  */
+body{
+    width: 750px;
+    overflow: hidden;
+
+}
+.bb{
+    width: 100%;
+    overflow: hidden;
+}
+header{
+	display: flex;
+	flex-direction: column;
+}
+
+/*头部 搜索框 地址选择 */
+header .firstHeader{
+	width:100%;
+	background: #282828;
+	display: flex;
+	flex-direction: row;
+	flex:1;
+}
+header .left{
+	flex:1;
+	display: flex;
+	flex-direction: row;
+}
+header .right{
+	/*flex:1px;*/
+	float:right;
+}
+header .center{
+	flex:2;
+	display: flex;
+	flex-direction: row;
+}
+header .left>div:last-child{
+	margin:17px;
+}
+/* 地址信息*/
+header .left #select{
+	width:120px;
+	height:35px;
+	font-size:20px;
+}
+header .left #select select{
+	margin:0px;
+	height:35px;
+	border-radius:3px;
+	background: #282828;
+	color:#FFFFFF;
+}
+header .left #select select>option{
+	color:#FFFFFF;
+	
+}
+
+/*搜索框  */
+header .center{
+    float: left;
+    width: 450px;
+    height: 50px;
+    background: #4b4b4d;
+    margin-top:8px;
+    margin-left:0px;
+}
+header #search{
+	margin:15px;
+	width:300px;
+	height:30px;
+}
+header .center #search input{
+    width: 350px;
+    height: 100%;
+    background:rgba(0, 0, 0, 0);
+    color: #9a9a9c;
+    font-size: 25px;
+    border:none;
+    outline:none;
+}
+/*个人中心 */
+header .right>img{
+	margin-right:5px;
+	margin-top:8px;
+}
+
+/*模特 演绎 专业 */
+header .mote{
+	flex:1;
+    width: 100%; 
+    background: #282828;
+    border-top:1px solid #9A9A9C;
+    
+}
+header .mote .left{
+	float:left;
+	justify-content: flex-start;
+}
+header .mote .left>div{
+	margin:25px;
+	font-size: 30px;
+	color:#FFFFFF;
+}
+header .mote .right{
+	float:right;
+	margin:20px;
+	font-size:25px;
+	color:#D2D2D2;
+}
+
+header .mote .left>div:hover{
+    color: #fd7529;
+    border-bottom: 5px solid #fd7529;
+}
+
+/*nav 模特轮播图和选项卡切换  */
+nav{
+	position:relative;
+	width:100%;
+	height:400px;
+	background: #f1f1f1;
+	display:flex; /*弹性布局 */
+	flex-direction:row; /*从左往右排布 */
+	
+}
+nav .two,.three{
+	flex:1;
+	display:flex; /*弹性布局 */
+	flex-direction:row; /*从左往右排布 */
+}
+
+/* 模特模块 */
+nav .img{
+	display:flex; /*弹性布局 */
+	flex-direction:row; /*从左往右排布 */
+	justify-content: space-between;
+	background: none; 
+	
+}
+nav .img>div{
+    margin: 25px; 
+    height: 315px;
+    width: 200px;
+    /* flex: 1; */
+    background: #fff;
+}
+nav .img>div img{
+    display: block;
+    border: 10px solid #F8F8F8;
+}
+nav .img>div figure{
+	text-align: center;
+	line-height: 30px;
+	/*font-size:20px;*/
+}
+nav .img>div .sb{
+	border-bottom: 3px solid #FF732B;
+}
+
+nav .two{
+    position: relative;
+    left: 0px;  
+    top: -350px; 
+    
+}
+nav .three{
+    position: relative;
+    left: 0px;  
+    top: -700px; 
+    
+}
+
+nav .four{
+    position: absolute;
+    top: 350px;
+    clear: both;
+    width: 100%;
+    float: left; 
+    border-bottom: 2px solid #ff6029;
+}
+nav .four>.center{
+	width:250px;
+	background:#E8E8E8;
+	display:flex;
+	justify-content: space-between;
+	margin:0 auto;
+}
+nav .four>.center span{
+	flex: 1;
+    width: 50px;
+    height: 5px;
+    margin: 20px;
+    background: #FFFFFF;
+}
+nav .four>.center span:hover{
+	background: #ff6029;
+}
+/*机构和招募  */
+.company{
+	width:100%;
+	background:pink;
+	
+}
+.company .nav{
+	width:100%;
+	display: flex;
+	flex-direction:row;
+	justify-content: flex-start;
+	background:#FFFFFF;
+	border-bottom:3px solid #9A9A9C;
+}
+.company .nav>.left{
+	width:67%;
+	font-size:30px;
+	margin-top:25px;
+}
+.company .nav>.left span{
+	margin:0px 60px;
+	
+}
+.company .nav>.right{
+	width:33%;
+	font-size:25px;
+	text-align: right;
+	margin:25px;
+	color:#9A9A9C;	
+}
+/*机构模块 */
+.company .companys{
+	
+	display:flex;
+	flex-direction:column;
+	border:1px solid red;
+	background:#FFC0CB;
+}
+.company .companys .items{
+	
+	height:150px;
+	background:#FFC0CB;
+	display:flex;
+	flex-direction:row;
+	border:1px solid red;
+}
+

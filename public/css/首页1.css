@@ -1,0 +1,413 @@
+*{
+    margin:0;
+    padding: 0;
+}
+/*body设置为宽度750px  */
+body{
+    width: 750px;
+    overflow: hidden;
+
+}
+.bb{
+    width: 100%;
+    overflow: hidden;
+}
+/*头部 搜索框 地址选择 */
+header{
+    display:block;
+    float: left;
+    width: 100%;
+    background: #282828;
+}
+/*地址选择  */
+header .left{
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-left: 27px;
+}
+header .left #img{
+    display: block;
+    float: left;
+
+}
+header .left #select{
+     display: block;
+    float: left; 
+    margin-top: 12px; 
+    width: 100px;
+    height: 50px;
+  /* background: rgba(0, 0, 0, 0);        */
+}
+header .left #select select{
+ margin-top: 0;
+ height: 25px;
+  background: rgba(0, 0, 0, 0);  
+ background: transparent;
+ color: #d7d7d7; 
+ font-size: 18px;
+ border: none;
+ outline: none;
+}
+header .left #select select>option{
+     background: rgba(0, 0, 0, 0); 
+    background: transparent;
+    -webkit-appearance: none;
+    border:none;
+    outline: none; 
+    color: #fff;
+}
+/*搜索框  */
+header .center{
+    float: left;
+    width: 450px;
+    height: 50px;
+    background: #4b4b4d;
+}
+header .center #img{
+    display: block;
+    float: left;
+    margin-left: 35px;
+}
+header .center #search{
+    margin-left: 10px;
+    display: block;
+    height: 55px;
+    float: left;
+}
+header .center #search input{
+    width: 350px;
+    height: 100%;
+    background:rgba(0, 0, 0, 0);
+    color: #9a9a9c;
+    font-size: 25px;
+    border:none;
+    outline:none;
+}
+/*个人中心图标  */
+header .right{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+header .mote{
+    width: 100%; 
+    color: #fff;
+    font-size: 30px;
+}
+header .mote .left>span:hover{
+    color: #fd7529;
+    border-bottom: 5px solid #fd7529;
+}
+header .mote .left{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+}
+header .mote .left span{
+    /* flex: 1; */
+    width: 120px;
+    height: 100%;
+    text-align: center;
+}
+header .mote .right{
+    margin-top: 40px;
+    float: right;
+    font-size: 20px;
+    margin-right: 35px;
+    color: #787878;
+}
+
+
+/*nav 模特轮播图和选项卡切换  */
+nav{
+    position: relative;
+    display:block;
+    float: left;
+    width: 100%;
+    height: 400px;
+    background: #f1f1f1;
+}
+nav .img{
+    /* float: left; */
+    display: flex;
+    margin-left: 55px;
+    margin-right: 55px;
+    flex-direction: row;
+    justify-content: space-between;
+     background: none; 
+    position: relative;
+}
+nav .img>div{
+    margin-top: 25px; 
+    height: 315px;
+    width: 200px;
+    /* flex: 1; */
+    background: #fff;
+}
+nav .img>div img{
+    display: block;
+    border: 10px solid #fff;
+}
+nav .img>div figcaption{
+    /* text-align: center; */
+    margin: 0 auto;
+    line-height: 30px;
+    width: 80px;
+}
+nav .img>div div{
+    text-align: center;
+}
+nav .img>div .sb{
+    border-bottom: 2px solid black;
+}
+
+nav .two{
+    position: relative;
+    left: 0px;  
+    top: -350px; 
+    
+}
+nav .three{
+    position: relative;
+    left: 0px;  
+    top: -700px; 
+    
+}
+
+nav .four{
+    position: absolute;
+    top: 350px;
+    clear: both;
+    width: 100%;
+    float: left; 
+    border-bottom: 2px solid #ff6029;
+}
+nav .four>.center{
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav .four>.center span{
+    flex: 1;
+    width: 50px;
+    height: 5px;
+    margin: 20px;
+    background: #b2b2b2;
+}
+nav .four>.center span:hover{
+    background: #ff6029;
+}
+/*机构和招募  */
+.company{
+    width: 100%;
+    clear: both;
+    float: left;
+}
+.company .nav{
+    clear: both;
+    width: 100%;
+    height: 90px;
+    /* float: left; */
+    border-bottom: 5px solid #f0eff5;
+}
+.company .nav .left{
+    display: flex;
+    width: 400px;
+    
+    justify-content: space-around; 
+}
+.company .nav>.left>span{
+    width: 165px;
+    font-size: 30px;
+    line-height: 90px;
+    text-align: center;
+}
+.company .nav>.left>span:hover{
+    color: #fd7529;
+    border-bottom: 3px solid #fd7529;
+}
+ .company .nav>.right{
+     position: relative;
+     top: -50px;
+    width: 100px;
+    float: right;
+    width: 65px;
+    color: #787878;
+    margin-right: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+} 
+.company .companys{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.company .companys .items{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #ccc;
+}
+.company .companys>.items .img{
+    width: 185px;
+    height: 100%;
+    
+}
+.company .companys>.items .direction{
+    width: 455px;
+    height: 100%;
+    font-size: 25px;
+    color: #6b6b6b;
+}
+.company .companys>.items .direction>div{
+    margin-top: 10px;
+}
+.company .companys>.items .direction .bottom{
+    font-size: 20px;
+    color:#ccc;
+}
+.company .companys .items>.time{
+    width: 200px;
+}
+.company .companys .items>.time>div:first-child{
+    font-size: 20px;
+    text-align: center;
+}
+.company .companys .items>.time>div:nth-child(2){
+    margin-top: 60px;
+    font-size: 23px;
+    text-align: center;    
+    color: red;
+}
+.company .zhaomu{
+    width: 100%;
+    font-size: 30px;
+    position: relative;
+    top: -620px;
+}
+.company .zhaomu .items{
+    width: 100%;
+    float: left;
+    line-height: 50px;
+    margin-left: 20px; 
+    border-bottom: 3px solid #ccc;
+}
+.company .zhaomu .items div:nth-child(2){
+    color: #676767;
+}
+.company .zhaomu .items>div:last-child{
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    top: -50px;
+    background: #ff732b;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/*娱乐 八卦新闻   */
+.news{
+    width: 100%;
+    float: left;
+    position: relative;
+    top: -600px;
+}
+.news .nav{
+    display: flex;
+    height: 90px;
+    border-bottom: 2px solid #ccc;
+}
+.news .nav>span{
+    width: 160px;
+    height: 100%;
+    text-align: center;
+    line-height: 90px;
+    color: #343434;
+    font-size: 30px;
+}
+.news .nav>span:hover{
+    width: 160px;
+    color: #fd7529;
+    border-bottom: 3px solid #fd7529;
+}
+.news .nav>span:last-child{
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 250px;
+}
+.news .nav>span:last-child:hover{
+    color: #343434;
+    border:none;
+}
+.news .study .items{
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    font-size: 27px;
+    line-height: 90px;
+    border-bottom: 1px solid #ccc;
+}
+.news .study .items>a{
+    text-decoration: none;
+        color: #333333;
+}
+.news .study .items>a:last-child{
+    font-size: 14px;
+}
+.news .fun{
+    position: relative;
+    width: 100%;
+    top: -350px;
+}
+.news .fun>.items{
+    width: 100%;
+    height: 90px;
+}
+.news .fun .items a{
+text-align: left;
+text-decoration: none;
+font-size: 25px;
+color: #343434; 
+}
+.news .fun .items>a:last-child{
+    float: right;
+}
+/*最底部 选项卡切换 首页 娱乐 机构 学堂 招募  */
+footer{
+    float: left;
+    width: 750px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background: #272727;
+    position: absolute;
+    top: 1750px;
+}
+footer span{
+    margin:20px 0;
+    height: 100px;
+    width: 100px;
+    color: #fff;
+    font-size: 27px;
+}
+footer span img{
+    background: #fff;
+    border:none;
+    outline:none;
+}
+footer span img:hover{
+    background: #ff7628;
+}
+footer span{
+    border:none;
+    outline:none;
+}
