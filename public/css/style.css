@@ -7,7 +7,7 @@ body {
 }
 .outer {
 		width: 100%;
-		background: url('../images/1.jpg');
+		background: url('../images/0-images/banner.jpg');
 		background-size: cover;
 		overflow: hidden;
 	}
