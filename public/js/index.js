@@ -45,10 +45,12 @@ $(function(){
             var $target = event.target;
             var $result =$target.textContent;
             if($result == "机构"){
-                var $companys = $(".company .companys")[0];  
-                var $zhaomu = $(".company .zhaomu")[0];  
-                $companys.setAttribute("style","visibility: visible;");
-                $zhaomu.setAttribute("style","visibility: hidden;");
+                // var $companys = $(".company .companys")[0];  
+                // var $zhaomu = $(".company .zhaomu")[0];  
+                // $companys.setAttribute("style","visibility: visible;");
+                // $zhaomu.setAttribute("style","visibility: hidden;");
+                var $companys = $(".company .companys").eq(0).css('display','block');  ;  
+                var $zhaomu = $(".company .zhaomu").eq(0).css('display','none'); 
             }else{
                 var $companys = $(".company .companys").eq(0).css('display','none');  ;  
                 var $zhaomu = $(".company .zhaomu").eq(0).css('display','block');  
