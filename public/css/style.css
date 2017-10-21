@@ -1,0 +1,142 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	width: 100%;
+}
+.outer {
+		width: 100%;
+		background: url('../images/1.jpg');
+		background-size: cover;
+		overflow: hidden;
+	}
+	.center {
+		width: 300px;
+		height: 300px;
+		margin: 40% auto 0;
+		background: rgba(0,0,0,0.5);
+		border: 20px solid rgba(255,255,255,0.1);
+		border-radius: 50%;
+		background-clip: content-box;
+	}
+	.center .content {
+		width: 300px;
+		height: 300px;
+		margin: 0 auto;
+		border-radius: 50%;
+		
+	}
+	.center .content form {
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	/*登录名*/
+	.center .content form .username,.password  {
+		width: 200px;
+		height: 40px;
+		display: flex;
+		flex-direction: row;
+		border: 1px solid #fff;
+	}
+	.center .content form .username span,.password span {
+		display: block;
+		width: 50px;
+		line-height: 40px;
+		color: #fff;
+		font-size: 14px;
+		padding: 0 0 0 4px;
+	}
+	.center .content form .username input,.password input  {
+		width: 115px;
+		padding: 0 5px;
+		background: rgba(0,0,0,0);
+		border: none;
+		outline: none;
+		color: #fff;
+		font-size: 18px;
+	}
+	.center .content form button {
+		width: 100px;
+		height: 40px;
+		border: none;
+		border-radius: 4px;
+		background-color: RGB(255,115,43);
+		color: #fff;
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+@media screen and (max-width: 768px) {
+	.outer {
+		width: 100%;
+		background: url('../images/1.jpg');
+		background-size: 100% 100%;
+		overflow: hidden;
+	}
+	.center {
+		width: 300px;
+		height: 300px;
+		margin: 40% auto 0;
+		background: rgba(0,0,0,0.5);
+		border: 20px solid rgba(255,255,255,0.1);
+		border-radius: 50%;
+		background-clip: content-box;
+	}
+	.center .content {
+		width: 300px;
+		height: 300px;
+		margin: 0 auto;
+		border-radius: 50%;
+		
+	}
+	.center .content form {
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	/*登录名*/
+	.center .content form .username,.password  {
+		width: 200px;
+		height: 40px;
+		display: flex;
+		flex-direction: row;
+		border: 1px solid #fff;
+	}
+	.center .content form .username span,.password span {
+		display: block;
+		width: 50px;
+		line-height: 40px;
+		color: #fff;
+		font-size: 14px;
+		padding: 0 0 0 4px;
+	}
+	.center .content form .username input,.password input  {
+		width: 115px;
+		padding: 0 5px;
+		background: rgba(0,0,0,0);
+		border: none;
+		outline: none;
+		color: #fff;
+		font-size: 18px;
+	}
+	.center .content form button {
+		width: 100px;
+		height: 40px;
+		border: none;
+		border-radius: 4px;
+		background-color: RGB(255,115,43);
+		color: #fff;
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+}
