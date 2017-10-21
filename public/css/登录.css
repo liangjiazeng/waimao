@@ -7,11 +7,11 @@ body{
     height: 1280px; 
     background-image: url(../images/0-images/banner.jpg);
     background-repeat: no-repeat;
-     background-size: 100% 100%; 
+     background-size: cover; 
 }
 .one{
     width: 610px;
-    height: 610px;
+    height:610px;
     border: 5px dashed #f57129;
     border-radius: 50%;
     position: relative;
