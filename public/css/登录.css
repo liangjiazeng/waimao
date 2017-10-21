@@ -4,7 +4,7 @@
 }
 body{
     width: 750px;
-    height: 1280px; 
+    /*height: 1280px; */
     background-image: url(../images/0-images/banner.jpg);
     background-repeat: no-repeat;
      background-size: cover; 

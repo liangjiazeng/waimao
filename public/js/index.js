@@ -33,13 +33,27 @@ $(function(){
 		 $('.content .girls .mote .show>div').toArray().forEach(function(item,index){
 		 	item.setAttribute("class","sb");	
 		 });
-		 $('.content .girls .mote .show>div').eq(sum).attr("class","mote1");
-		 
+		 $('.content .girls .mote .show>div').eq(sum).attr("class","mote1");		 
 		 sum++;
-
 		 //重头来一遍
 		 if(sum==3){
 		 	sum=0;
 		 }
 	},1000);
+	//机构 招募
+    $(".company .nav>.left").on("mouseover",function(event){
+            var $target = event.target;
+            var $result =$target.textContent;
+            if($result == "机构"){
+                var $companys = $(".company .companys")[0];  
+                var $zhaomu = $(".company .zhaomu")[0];  
+                $companys.setAttribute("style","visibility: visible;");
+                $zhaomu.setAttribute("style","visibility: hidden;");
+            }else{
+                var $companys = $(".company .companys").eq(0).css('display','none');  ;  
+                var $zhaomu = $(".company .zhaomu").eq(0).css('display','block');  
+                // $companys.setAttribute("style","visibility: hidden;");
+                // $zhaomu.setAttribute("style","visibility: visible;");
+            }
+    });
 })
