@@ -9,7 +9,7 @@ body{
     height: 100%; */
     background-image: url(../images/0-images/banner.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 .center{
     margin:0 auto;
