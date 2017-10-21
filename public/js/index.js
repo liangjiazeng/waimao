@@ -6,7 +6,12 @@ $(function(){
 		$(".content .girls>div").toArray().forEach(function(item,index){
 			item.setAttribute('class',"hidden");
 		});	
+		$('header .top_two .scroll>div').eq(0).css('color','#fff');
+		$('header .top_two .scroll>div').eq(1).css('color','#fff');
+		$('header .top_two .scroll>div').eq(2).css('color','#fff');
 		$(".content .girls>div").eq(id-1).attr('class','mote');
+		// $(".content .girls>div").eq(id-1).css('background','#ff9a64');
+		$(this).eq(0).css('color','#ff9a64');
 		// $(".content .girls>div").eq(id-1).attr('class',"hidden");
 	});
 
@@ -45,17 +50,12 @@ $(function(){
             var $target = event.target;
             var $result =$target.textContent;
             if($result == "机构"){
-                // var $companys = $(".company .companys")[0];  
-                // var $zhaomu = $(".company .zhaomu")[0];  
-                // $companys.setAttribute("style","visibility: visible;");
-                // $zhaomu.setAttribute("style","visibility: hidden;");
                 var $companys = $(".company .companys").eq(0).css('display','block');  ;  
                 var $zhaomu = $(".company .zhaomu").eq(0).css('display','none'); 
             }else{
                 var $companys = $(".company .companys").eq(0).css('display','none');  ;  
                 var $zhaomu = $(".company .zhaomu").eq(0).css('display','block');  
-                // $companys.setAttribute("style","visibility: hidden;");
-                // $zhaomu.setAttribute("style","visibility: visible;");
+               ;
             }
     });
 })
