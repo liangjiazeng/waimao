@@ -1,19 +1,27 @@
 $(function(){
+
+	// “模特” “演绎” “专业”三个模块点击之后的切换
 	$('header .top_two .scroll>div').on('click',function(event){
 		var id = +$(this).eq(0).attr("id");
 		var dd = $(".content .girls>div").toArray();
 
+
+		//首先要把“模特” “演绎” “专业” 的class改变为hidden
 		$(".content .girls>div").toArray().forEach(function(item,index){
 			item.setAttribute('class',"hidden");
 		});	
+		//点中的那一个获取到的id值  .content .girls>div相对应的模块就会改变class为mote
+		$(".content .girls>div").eq(id).attr('class','mote');
+
+
+		//点击之后 改变css样式  改变字体颜色为橙色
 		$('header .top_two .scroll>div').eq(0).css('color','#fff');
 		$('header .top_two .scroll>div').eq(1).css('color','#fff');
-		$('header .top_two .scroll>div').eq(2).css('color','#fff');
-		$(".content .girls>div").eq(id-1).attr('class','mote');
-		// $(".content .girls>div").eq(id-1).css('background','#ff9a64');
+		$('header .top_two .scroll>div').eq(2).css('color','#fff');	
 		$(this).eq(0).css('color','#ff9a64');
-		// $(".content .girls>div").eq(id-1).attr('class',"hidden");
 	});
+		//模拟点击事件    一开始默认点击的就是第一个 也就是“模特”
+		$('header .top_two .scroll>div').eq(0).trigger('click');
 
 	$(this).on('click','.mote .small_line>div',function(event){
 		var div = $('.content .girls .mote>div');
@@ -28,15 +36,9 @@ $(function(){
 		$(this).attr('class','sb');
 	});
 
-	// 自动轮播
-		var shows = $('.content .girls .mote>div').toArray();
-		var lines = $('.mote .small_line>div').toArray();
-		var address_mote =['./images/0-images/index/index_22.png','./images/0-images/index/index_20.png','./images/0-images/index/index_18.png'];
-		var address_yanyi =['./images/0-images/num_1.jpg','./images/0-images/num_2.jpg','./images/0-images/num_3.jpg'];
-		var address_zhuanye =['./images/0-images/cos_1.jpg','./images/0-images/cos_2.jpg','./images/0-images/cos_3.jpg'];
-
-		var sum = 0;
-	var id = setInterval(function(){
+	// 图片的橙色框框自动轮播	每隔一秒种就向右切换
+	var sum = 0;
+	var id = setInterval(function(){		
 		 $('.content .girls .mote .show>div').toArray().forEach(function(item,index){
 		 	item.setAttribute("class","sb");	
 		 });
@@ -49,7 +51,8 @@ $(function(){
 	},1000);
 
 
-		var sms =0;
+    //“模特” “演绎” “专业”三个模块对应下的四组图片的轮播  6秒跳一次
+	var sms =0;
 	var ids = setInterval(function(){
 		for(var i=0;i<4;i++){
 			$('.content .girls .mote>div').eq(i).attr("class","no_show");
